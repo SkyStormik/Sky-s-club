@@ -1,25 +1,58 @@
 class Country:
-    country = "Germany"
+    def __init__(self):
+        super().__init__()
+        self.country = "Germany"
 class Brand:
-    brand = "Audi"
+    def __init__(self):
+        super().__init__()
+        self.brand = "Audi"
 class Model:
-    model = "rs7"
+    def __init__(self):
+        super().__init__()
+        self.model = "rs7"
 class V:
-    V = "3993 см3"
+    def __init__(self):
+        super().__init__()
+        self.V = "3993 cm3"
 class Power:
-    power = "560 h.p."
+    def __init__(self):
+        super().__init__()
+        self.power = "560 h.p."
 class Weight:
-    weight = "2005 kg"
+    def __init__(self):
+        super().__init__()
+        self.weight = "2005 kg"
 class Speed:
-    speed = "250 km/hour"
+    def __init__(self):
+        super().__init__()
+        self.speed = "250 km/hour"
 class LongWidthHeight:
-    long = "5012 mm"
-    width = "2139 mm"
-    height = "1419 mm"
+    def __init__(self):
+        super().__init__()
+        self.long = "5012 mm"
+        self.width = "2139 mm"
+        self.height = "1419 mm"
 class Drive:
-    drive = "All-wheel drive"
+    def __init__(self):
+        super().__init__()
+        self.drive = "All-wheel drive"
 class Classauto:
-    classauto = "sportcar"
+    def __init__(self):
+        super().__init__()
+        self.classauto = "sportcar"
 class Auto(Country, Brand, Model, V, Power, Weight, Speed, LongWidthHeight, Drive, Classauto):
-    Auto = "Audi rs7"
-print(Auto)
+    def print_info(self):
+        print(self.brand)
+        print(self.country)
+        print(self.model)
+        print(self.V)
+        print(self.power)
+        print(self.weight)
+        print(self.speed)
+        print(self.long)
+        print(self.width)
+        print(self.height)
+        print(self.drive)
+        print(self.classauto)
+Audi = Auto()
+Audi.print_info()
